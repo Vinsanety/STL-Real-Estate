@@ -1,72 +1,85 @@
 <!DOCTYPE html>
-<html ng-app="stl">
+<html ng-app="STL">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>STL Real Estate</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS PAGES -->
     <link rel="stylesheet" href="css/layout.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/splash.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/aboutUs.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/contactUs.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/testing.css" media="screen" title="no title" charset="utf-8">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <script type="text/javascript" src="/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/angular/ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js" charset="utf-8"></script>
+    <script src="js/services.js" charset="utf-8"></script>
   </head>
-  <body class="col s12">
 
-<!-- Nav Bar -->
-<div class="row" id="navBar">
-  <!-- <div class="col s12 m9 l10">
-    <div id="introduction" class="section scrollspy">
-    </div>
-    <div id="structure" class="section scrollspy">
-    </div>
-    <div id="initialization" class="section scrollspy">
-    </div>
-  </div> -->
+  <body ng-cloak>
 
-  <div class="col hide-on-small-only m3 l2">
-    <!-- <div class="toc-wrapper"> -->
-      <div style="height: 1px;">
-        <ul class="section table-of-contents">
-          <li class="section scrollspy nav_text"><a href="/#home" >HOME</a></li>
-          <li class="section scrollspy nav_text"><a href="/#structure">PROPERTIES</a></li>
-          <li class="section scrollspy nav_text"><a href="/#initialization">LOANS</a></li>
-          <li class="section scrollspy nav_text"><a href="/#testing">TEST</a></li>
-        </ul>
+  <!-- Nav Bar -->
+  <div class="row" id="navBar">
+    <!-- <div class="col s12 m9 l10">
+      <div id="introduction" class="section scrollspy">
+      </div>
+      <div id="structure" class="section scrollspy">
+      </div>
+      <div id="initialization" class="section scrollspy">
+      </div>
+    </div> -->
+
+    <div class="col hide-on-small-only m3 l2">
+      <!-- <div class="toc-wrapper"> -->
+        <div style="height: 1px;">
+          <ul class="section table-of-contents">
+            <li class="section scrollspy nav_text"><a ui-sref="#">HOME</a></li>
+            <li class="section scrollspy nav_text"><a ui-sref="#">PROPERTIES</a></li>
+            <li class="section scrollspy nav_text"><a ui-sref="#">LOANS</a></li>
+            <li class="section scrollspy nav_text"><a ui-sref="#">TEST</a></li>
+          </ul>
+      </div>
     </div>
   </div>
-</div>
-
-<!-- Nav Bar ENDS -->
+  <!-- Nav Bar ENDS -->
 
 
+  <div ng-view></div>
 
-<div class="row">
-  <div class="col s10" id="partials">
-      <div ng-view></div>
-  </div>
-</div>
 
 <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-copyright">
-          <div class="container" id="foot_line">
-            <ul id="foot_ul">
-              <li class="foot_info" id="foot_about"><a href="/#aboutUs"> ABOUT US </a></li>
-              <li class="foot_info" id="foot_logo">STL</li>
-              <li class="foot_info" id="foot_contact"><a href="/#contactUs"> CONTACT US </a></li>
-            </ul>
-          </div>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer-copyright">
+      <div class="container" id="foot_line">
+        <ul id="foot_ul">
+          <li class="foot_info" id="foot_about"><a ui-sref="#">ABOUT US</a></li>
+          <li class="foot_info" id="foot_logo">STL</li>
+          <li class="foot_info" id="foot_contact"><a ui-sref="#">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 <!-- Footer ENDS -->
 
 
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/materialize_functions.js" charset="utf-8"></script>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-  <script src="app.js" charset="utf-8"></script>
-  <script src="js/materialize_functions.js" charset="utf-8"></script>
 </html>
