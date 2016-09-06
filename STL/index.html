@@ -42,10 +42,12 @@
       <!-- <div class="toc-wrapper"> -->
         <div style="height: 1px;">
           <ul class="section table-of-contents">
-            <li class="section scrollspy nav_text"><a ui-sref="#">HOME</a></li>
+            <li class="section scrollspy nav_text"><a ui-sref="home">HOME</a></li>
+            <li class="section scrollspy nav_text"><a ui-sref="contact">CONTACT</a></li>
+            <li class="section scrollspy nav_text"><a ui-sref="aboutSTL">ABOUT STL</a></li>
             <li class="section scrollspy nav_text"><a ui-sref="#">PROPERTIES</a></li>
             <li class="section scrollspy nav_text"><a ui-sref="#">LOANS</a></li>
-            <li class="section scrollspy nav_text"><a ui-sref="#">TEST</a></li>
+            <li class="section scrollspy nav_text"><a ui-sref="testing">TEST</a></li>
           </ul>
       </div>
     </div>
@@ -53,7 +55,7 @@
   <!-- Nav Bar ENDS -->
 
 
-  <div ng-view></div>
+  <div ui-view></div>
 
 
 <!-- Footer -->
@@ -61,9 +63,9 @@
     <div class="footer-copyright">
       <div class="container" id="foot_line">
         <ul id="foot_ul">
-          <li class="foot_info" id="foot_about"><a ui-sref="#">ABOUT US</a></li>
+          <li class="foot_info" id="foot_about"><a ui-sref="aboutSTL">ABOUT US</a></li>
           <li class="foot_info" id="foot_logo">STL</li>
-          <li class="foot_info" id="foot_contact"><a ui-sref="#">CONTACT US</a></li>
+          <li class="foot_info" id="foot_contact"><a ui-sref="contact">CONTACT US</a></li>
         </ul>
       </div>
     </div>
