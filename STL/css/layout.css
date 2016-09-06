@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=BenchNine');
+@import url('https://fonts.googleapis.com/css?family=Chathura');
+
+
+body{
+  background-color: #F2F2F2;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#navBar{
+  float: left;
+  margin-top: 30px;
+  height: 100vh;
+  width: 200px;
+}
+
+.table-of-contents a{
+  color: #800000;
+  font-family: BenchNine;
+  font-size: 20px;
+  letter-spacing: 8px;
+}
+
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#foot_line{
+  width: 25vw;
+  height: 1px;
+  margin-top: 10px;
+  background-color: #800000;
+
+}
+
+#foot_ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#foot_about{
+  position: absolute;
+  left: 13%;
+  text-decoration: none;
+}
+
+#foot_logo{
+  letter-spacing: 20px;
+  font-family: BenchNine;
+  font-size: 25px;
+}
+
+a{
+text-decoration: none;
+color: #3f3f3f;
+}
+
+a:hover{
+  color: maroon;
+}
+
+#foot_contact{
+  position: absolute;
+  right: 18%;
+}
+
+.foot_info{
+  font-family: BenchNine;
+}
+
+#partials{
+  min-width: 85vw;
+  min-height: 100vh;
+  /*border: 2px solid black;*/
+}

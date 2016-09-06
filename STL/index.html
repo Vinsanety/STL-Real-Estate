@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="stl">
+  <head>
+    <meta charset="utf-8">
+    <title>STL Real Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/splash.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/aboutUs.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/contactUs.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/testing.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body class="col s12">
+
+<!-- Nav Bar -->
+<div class="row" id="navBar">
+  <!-- <div class="col s12 m9 l10">
+    <div id="introduction" class="section scrollspy">
+    </div>
+    <div id="structure" class="section scrollspy">
+    </div>
+    <div id="initialization" class="section scrollspy">
+    </div>
+  </div> -->
+
+  <div class="col hide-on-small-only m3 l2">
+    <!-- <div class="toc-wrapper"> -->
+      <div style="height: 1px;">
+        <ul class="section table-of-contents">
+          <li class="section scrollspy nav_text"><a href="/#home" >HOME</a></li>
+          <li class="section scrollspy nav_text"><a href="/#structure">PROPERTIES</a></li>
+          <li class="section scrollspy nav_text"><a href="/#initialization">LOANS</a></li>
+          <li class="section scrollspy nav_text"><a href="/#testing">TEST</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Nav Bar ENDS -->
+
+
+
+<div class="row">
+  <div class="col s10" id="partials">
+      <div ng-view></div>
+  </div>
+</div>
+
+<!-- Footer -->
+    <footer class="footer">
+      <div class="footer-copyright">
+          <div class="container" id="foot_line">
+            <ul id="foot_ul">
+              <li class="foot_info" id="foot_about"><a href="/#aboutUs"> ABOUT US </a></li>
+              <li class="foot_info" id="foot_logo">STL</li>
+              <li class="foot_info" id="foot_contact"><a href="/#contactUs"> CONTACT US </a></li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+<!-- Footer ENDS -->
+
+
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="js/materialize_functions.js" charset="utf-8"></script>
+</html>

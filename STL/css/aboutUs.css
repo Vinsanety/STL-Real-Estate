@@ -1,0 +1,58 @@
+.about_keeper{
+  position: relative;
+}
+
+.us_titles{
+  letter-spacing: 12px;
+  font-family: BenchNine;
+  font-size: 45px;
+  animation: font_color_change 3.5s infinite ease-in-out;
+}
+
+@keyframes font_color_change{
+    from {color: #3f3f3f;}
+    to {color: #800000;}
+}
+
+.underline_about{
+  width: 300px;
+  height: 1px;
+  margin-top: 10px;
+  /*margin-left: 18%;*/
+  background-color: #800000;
+}
+/*.parallax-container {
+   height: 300px;
+ }*/
+.about_style_box{
+  position: absolute;
+  width: 350px;
+  height: 550px;
+  background-color: #D49322;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  transform: translateZ(-2px);
+}
+
+#about_pic1{
+  width: 350px;
+  height: 450px;
+  margin-top: 14%;
+  transform: translateZ(-0.5px);
+}
+
+.about_text{
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  margin-top: 5%;
+
+}
+
+#about_pic2{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 15px;
+  width: 350px;
+  height: 200px;
+}

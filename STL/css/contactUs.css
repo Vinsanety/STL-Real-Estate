@@ -1,0 +1,81 @@
+.contact_keeper{
+  position: relative;
+}
+
+/*.parallax-container {
+   height: 300px;
+ }*/
+.us_titles{
+  letter-spacing: 12px;
+  font-family: BenchNine;
+  font-size: 45px;
+  animation: font_color_change 3.5s infinite;
+  transition-timing-function: ease-in-out;
+
+}
+
+@keyframes font_color_change{
+    from {color: #3f3f3f;}
+    to {color: #800000;}
+}
+
+.underline{
+  width: 10vw;
+  height: 1px;
+  margin-top: 10px;
+  /*margin-left: 18%;*/
+  background-color: #800000;
+
+}
+
+.contact_style_box{
+  position: absolute;
+  width: 350px;
+  height: 550px;
+  background-color: #0A480D;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#contact_pic1{
+  width: 350px;
+  height: 450px;
+  margin-top: 14%;
+}
+
+.contact_text{
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  margin-top: 5%;
+}
+
+.contact_info{
+  width: 350px;
+  height: 250px;
+  /*border: 2px solid black;*/
+}
+
+.text{
+  font-family: BenchNine;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.text_agent{
+  font-family: BenchNine;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+span{
+  color: maroon;
+}
+
+
+/*.material-icons{
+    color: maroon;
+    margin-left: -450px;
+}*/
