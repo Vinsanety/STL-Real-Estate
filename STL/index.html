@@ -31,7 +31,7 @@
   <!-- START NAV -->
   <div class="row">
     <div class="side-nav fixed z-depth-0" id='navBar'>
-      <div class="col hide-on-small-only">
+      <div class="col hide-on-med-and-down">
         <ul class="section table-of-contents">
           <li class="section scrollspy nav_text"><a ui-sref="home">HOME</a></li>
           <li class="section scrollspy nav_text"><a ui-sref="properties">PROPERTIES</a></li>
@@ -42,16 +42,20 @@
     </div>
   </div>
   <!-- MED AND SMALL NAV -->
-  <nav class=" hide-on-large-only z-depth-0">
-    <div class="nav-wrapper" id='small-nav'>
-        <ul id="nav-mobile" class="hide-on-large-only center">
-          <li><a ui-sref="home">Home</a></li>
-          <li><a ui-sref="properties">Properties</a></li>
-          <li><a ui-sref="loans">Loans</a></li>
-          <li><a ui-sref="testing">Test</a></li>
-        </ul>
+  <div class="row">
+    <div class="col s3 m3 hide-on-large-only">
+      <h6 id='table-of-contents-small' class='center-align'><a id='small-links' ui-sref="home">HOME</a></h6>
     </div>
-  </nav>
+    <div class="col s3 m3 hide-on-large-only">
+      <h6 id='table-of-contents-small' class='center-align'><a id='small-links' ui-sref="properties">PROPERTIES</a></h6>
+    </div>
+    <div class="col s3 m3 hide-on-large-only">
+      <h6 id='table-of-contents-small' class='center-align'><a id='small-links' ui-sref="loans">LOANS</a></h6>
+    </div>
+    <div class="col s3 m3 hide-on-large-only">
+      <h6 id='table-of-contents-small' class='center-align'><a id='small-links' ui-sref="testing">TESTING</a></h6>
+    </div>
+  </div>
   <!-- END MED AND SMALL NAV -->
   <!-- END NAV -->
 
