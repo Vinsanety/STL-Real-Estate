@@ -6,10 +6,11 @@
     <title>STL Real Estate</title>
 
     <!-- CSS PAGES -->
-    <link rel="stylesheet" href="css/layout.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/splash.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/aboutUs.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/contactUs.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/headerFooter.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/home.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/aboutSTL.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/contact.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/testing.css" media="screen" title="no title" charset="utf-8">
     <!-- Angular Material style sheet -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
@@ -22,55 +23,57 @@
     <script type="text/javascript" src="/angular/ui-router.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js" charset="utf-8"></script>
-    <script src="js/services.js" charset="utf-8"></script>
+    <script src="js/httpFactory.js" charset="utf-8"></script>
   </head>
 
   <body ng-cloak>
 
-  <!-- Nav Bar -->
-  <div class="row" id="navBar">
-    <!-- <div class="col s12 m9 l10">
-      <div id="introduction" class="section scrollspy">
-      </div>
-      <div id="structure" class="section scrollspy">
-      </div>
-      <div id="initialization" class="section scrollspy">
-      </div>
-    </div> -->
-
-    <div class="col hide-on-small-only m3 l2">
-      <!-- <div class="toc-wrapper"> -->
-        <div style="height: 1px;">
-          <ul class="section table-of-contents">
-            <li class="section scrollspy nav_text"><a ui-sref="home">HOME</a></li>
-            <li class="section scrollspy nav_text"><a ui-sref="contact">CONTACT</a></li>
-            <li class="section scrollspy nav_text"><a ui-sref="aboutSTL">ABOUT STL</a></li>
-            <li class="section scrollspy nav_text"><a ui-sref="#">PROPERTIES</a></li>
-            <li class="section scrollspy nav_text"><a ui-sref="#">LOANS</a></li>
-            <li class="section scrollspy nav_text"><a ui-sref="testing">TEST</a></li>
-          </ul>
-      </div>
-    </div>
-  </div>
-  <!-- Nav Bar ENDS -->
-
-
-  <div ui-view></div>
-
-
-<!-- Footer -->
-  <footer class="footer">
-    <div class="footer-copyright">
-      <div class="container" id="foot_line">
-        <ul id="foot_ul">
-          <li class="foot_info" id="foot_about"><a ui-sref="aboutSTL">ABOUT US</a></li>
-          <li class="foot_info" id="foot_logo">STL</li>
-          <li class="foot_info" id="foot_contact"><a ui-sref="contact">CONTACT US</a></li>
+  <!-- START NAV -->
+  <div class="row">
+    <div class="side-nav fixed z-depth-0" id='navBar'>
+      <div class="col hide-on-small-only">
+        <ul class="section table-of-contents">
+          <li class="section scrollspy nav_text"><a ui-sref="home">HOME</a></li>
+          <li class="section scrollspy nav_text"><a ui-sref="properties">PROPERTIES</a></li>
+          <li class="section scrollspy nav_text"><a ui-sref="loans">LOANS</a></li>
+          <li class="section scrollspy nav_text"><a ui-sref="testing">TEST</a></li>
         </ul>
       </div>
     </div>
+  </div>
+  <!-- MED AND SMALL NAV -->
+  <nav class=" hide-on-large-only z-depth-0">
+    <div class="nav-wrapper" id='small-nav'>
+        <ul id="nav-mobile" class="hide-on-large-only center">
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="properties">Properties</a></li>
+          <li><a ui-sref="loans">Loans</a></li>
+          <li><a ui-sref="testing">Test</a></li>
+        </ul>
+    </div>
+  </nav>
+  <!-- END MED AND SMALL NAV -->
+  <!-- END NAV -->
+
+
+  <div ui-view class='main'></div>
+
+
+<!-- START FOOTER -->
+
+  <footer class="footer center-align">
+    <div class="footer-copyright">
+      <div class="container">
+      <a class="text-lighten-4" id="footer-about" ui-sref="aboutSTL">ABOUT</a>
+      <span class='divider'>|</span>
+      <span id='footer-copyright'>© 2016 STL REAL ESTATE</span>
+      <span class='divider'>|</span>
+      <a class="text-lighten-4" id="footer-contact" ui-sref="contact">CONTACT</a>
+      </div>
+    </div>
   </footer>
-<!-- Footer ENDS -->
+
+<!-- END FOOTER -->
 
 
     <!-- Angular Material requires Angular.js Libraries -->
@@ -82,6 +85,5 @@
     <!--Import jQuery before materialize.js-->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/materialize_functions.js" charset="utf-8"></script>
   </body>
 </html>

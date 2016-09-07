@@ -21,6 +21,18 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     controller: 'contactController',
     controllerAs: 'contact'
   })
+  .state('properties', {
+    url: '/properties',
+    templateUrl: 'partials/properties.html',
+    controller: 'propertiesController',
+    controllerAs: 'propertiesController'
+  })
+  .state('loans', {
+    url: '/loans',
+    templateUrl: '/partials/loans.html',
+    controller: 'loansController',
+    controllerAs: 'loans'
+  })
   .state('testing', {
     url: '/testing',
     templateUrl: '/partials/testing.html',

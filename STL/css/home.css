@@ -1,0 +1,24 @@
+#logo-img{
+  width: 100%;
+  height: auto;
+}
+#logo-img-container{
+  margin-left: 20%;
+  margin-right: 5%;
+  margin-top: 5%;
+}
+#home-small-card{
+  /*margin-top: 20%;*/
+}
+#home-small-info{
+  color: #3f3f3f;
+}
+#home-small-card-opacity{
+  background-color:rgba(0, 0, 0, 0);
+}
+#home-small-card-link{
+  color: maroon;
+}
+#home-small-card-link:hover{
+  color: #039BE5;
+}
