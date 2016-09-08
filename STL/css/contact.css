@@ -1,68 +1,78 @@
-.contact_keeper{
-  position: relative;
+.contact_large_container{
+  margin: 0;
+  margin-left: 20%;
 }
-
-/*.parallax-container {
-   height: 300px;
- }*/
+.small-contact{
+  height: 100%;
+  text-align: center;
+}
 .us_titles{
   letter-spacing: 12px;
   font-family: BenchNine;
   font-size: 45px;
   animation: font_color_change 3.5s infinite;
   transition-timing-function: ease-in-out;
-
 }
-
 @keyframes font_color_change{
-    from {color: #3f3f3f;}
-    to {color: #800000;}
+  from {color: #3f3f3f;}
+  to {color: #800000;}
 }
-
-.underline{
-  width: 10vw;
-  height: 1px;
-  margin-top: 10px;
-  /*margin-left: 18%;*/
-  background-color: #800000;
-
-}
-
 .contact_style_box{
-  position: absolute;
+  position: relative;
   width: 350px;
   height: 550px;
   background-color: #0A480D;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  /*margin-left: 15%;*/
+  margin-top: 10%;
+  transform: translateZ(-2px);
+}
+#contact_pic1{
+  position: absolute;
+  margin: 8%;
+  width: 400px;
+  height: auto;
+}
+.underline{
+  width: 10vw;
+  height: 1px;
+  background-color: #800000;
+}
+span{
+  color: maroon;
 }
 
 #contact_pic1{
   width: 350px;
   height: 450px;
-  margin-top: 14%;
 }
 
-.contact_text{
-  position: absolute;
-  width: 350px;
-  height: 400px;
-  margin-top: 5%;
+.contact_container{
+  width: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.contact_small_container{
+  width: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.contact_large{
+  /*margin-left: 20%;*/
+  margin-right: 20%;
 }
 
 .contact_info{
-  width: 350px;
+  width: auto;
   height: 250px;
-  /*border: 2px solid black;*/
+  margin-top: 20%;
+  margin-bottom: -20%;
 }
-
 .text{
   font-family: BenchNine;
   font-size: 22px;
   letter-spacing: 2px;
   text-align: left;
 }
-
 .text_agent{
   font-family: BenchNine;
   font-size: 22px;
@@ -70,12 +80,15 @@
   text-align: right;
 }
 
-span{
-  color: maroon;
+.small_text{
+  font-family: BenchNine;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: left;
 }
-
-
-/*.material-icons{
-    color: maroon;
-    margin-left: -450px;
-}*/
+.small_text_agent{
+  font-family: BenchNine;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: right;
+}
