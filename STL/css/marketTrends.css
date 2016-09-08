@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-/*.parallax-container{
-  height: 300px;
-}*/
-/*
-.parallax img{
-  display: inherit !important;
-  overflow: scroll;
-}*/
+.trends-container-large{
+  margin-left: 20%;
+}
