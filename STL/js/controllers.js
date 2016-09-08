@@ -11,6 +11,10 @@ app.controller('homeController', function($scope) {
 app.controller('aboutSTLController', function($scope) {
   console.log('about route hit');
 
+  angular.element(document).ready(function () {
+    $('.scrollspy').scrollSpy();
+  });
+
 })
 
 app.controller('contactController', function($scope) {
@@ -19,6 +23,7 @@ app.controller('contactController', function($scope) {
 })
 
 app.controller('buyingProcessController', function($scope, httpFactory){
+  console.log('buying process hit');
   // httpFactory.zillow().then(function(data){
   //   // console.log(data);
   //   // for (var i = 0; i < data.data.length; i++) {
@@ -30,7 +35,6 @@ app.controller('buyingProcessController', function($scope, httpFactory){
   //     console.log($scope.data);
   //   }
   // })
-  console.log('buying process hit');
 
 })
 

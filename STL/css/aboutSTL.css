@@ -1,17 +1,41 @@
-.about_keeper{
-  position: relative;
+.about_large_container{
+  margin: 0;
+  margin-left: 20%;
 }
-
+.about_small_container{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .us_titles{
   letter-spacing: 12px;
   font-family: BenchNine;
   font-size: 45px;
   animation: font_color_change 3.5s infinite ease-in-out;
 }
-
 @keyframes font_color_change{
-    from {color: #3f3f3f;}
-    to {color: #800000;}
+  from {color: #3f3f3f;}
+  to {color: #800000;}
+}
+#about-right{
+  margin-right: 5%;
+}
+.about_style_box{
+  position: relative;
+  width: 350px;
+  height: 500px;
+  background-color: #D49322;
+  margin-left: 15%;
+  margin-top: 15%;
+  transform: translateZ(-2px);
+}
+
+#about_pic1{
+  position: absolute;
+  margin: 8%;
+  width: 400px;
+  height: auto;
 }
 
 .underline_about{
@@ -19,37 +43,4 @@
   height: 1px;
   margin-top: 10px;
   background-color: #800000;
-}
-
-.about_style_box{
-  position: absolute;
-  width: 350px;
-  height: 550px;
-  background-color: #D49322;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  transform: translateZ(-2px);
-}
-
-#about_pic1{
-  width: 350px;
-  height: 450px;
-  margin-top: 14%;
-  transform: translateZ(-0.5px);
-}
-
-.about_text{
-  position: absolute;
-  width: 350px;
-  height: 400px;
-  margin-top: 5%;
-
-}
-
-#about_pic2{
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-bottom: 15px;
-  width: 350px;
-  height: 200px;
 }
