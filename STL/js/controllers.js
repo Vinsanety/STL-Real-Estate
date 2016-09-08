@@ -18,33 +18,40 @@ app.controller('contactController', function($scope) {
 
 })
 
+app.controller('buyingProcessController', function($scope, httpFactory){
+  // httpFactory.zillow().then(function(data){
+  //   // console.log(data);
+  //   // for (var i = 0; i < data.data.length; i++) {
+  //   // }
+  // })
+  // httpFactory.freddieMac().then(function(data){
+  //   for (var i = 0; i < data.data.dataset.data.length; i++) {
+  //     $scope.data = data.data.dataset.data[i];
+  //     console.log($scope.data);
+  //   }
+  // })
+  console.log('buying process hit');
+
+})
+
 app.controller('loansController', function($scope) {
   console.log('loans route hit');
 
 })
 
 
-app.controller('testingController', function($scope) {
-  console.log('test route hit');
+app.controller('marketTrendsController', function($scope) {
+  console.log('marketTrends route hit');
 
   // PARALLAX
-  $(document).ready(function(){
+  angular.element(document).ready(function () {
     $('.scrollspy').scrollSpy();
     $('.parallax').parallax();
   });
 
 })
 
-app.controller('propertiesController', function($scope, httpFactory){
-  httpFactory.zillow().then(function(data){
-    // console.log(data);
-    // for (var i = 0; i < data.data.length; i++) {
-    // }
-  })
-  httpFactory.freddieMac().then(function(data){
-    for (var i = 0; i < data.data.dataset.data.length; i++) {
-        $scope.data = data.data.dataset.data[i];
-        console.log($scope.data);
-      }
-    })
-  })
+app.controller('listingsController', function($scope) {
+  console.log('listings route hit');
+
+})

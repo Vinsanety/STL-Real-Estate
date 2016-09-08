@@ -21,11 +21,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     controller: 'contactController',
     controllerAs: 'contact'
   })
-  .state('properties', {
-    url: '/properties',
-    templateUrl: 'partials/properties.html',
-    controller: 'propertiesController',
-    controllerAs: 'propertiesController'
+  .state('buyingProcess', {
+    url: '/buyingProcess',
+    templateUrl: 'partials/buyingProcess.html',
+    controller: 'buyingProcessController',
+    controllerAs: 'buyingProcessController'
   })
   .state('loans', {
     url: '/loans',
@@ -33,10 +33,16 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     controller: 'loansController',
     controllerAs: 'loans'
   })
-  .state('testing', {
-    url: '/testing',
-    templateUrl: '/partials/testing.html',
-    controller: 'testingController',
-    controllerAs: 'testing'
+  .state('marketTrends', {
+    url: '/marketTrends',
+    templateUrl: '/partials/marketTrends.html',
+    controller: 'marketTrendsController',
+    controllerAs: 'marketTrends'
+  })
+  .state('listings', {
+    url: '/listings',
+    templateUrl: '/partials/listings.html',
+    controller: 'listingsController',
+    controllerAs: 'listings'
   })
 }])
