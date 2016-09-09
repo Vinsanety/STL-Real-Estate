@@ -5,3 +5,21 @@
 *{
   font-family: BenchNine;
 }
+
+body{
+  background-color: #F2F2F2;
+  /*height: 100%;*/
+}
+.page-headers{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  text-align: center;
+  letter-spacing: 8px;
+  font-family: BenchNine;
+  animation: font_color_change 3.5s infinite ease-in-out;
+}
+@keyframes font_color_change{
+  from {color: #3f3f3f;}
+  to {color: #800000;}
+}

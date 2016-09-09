@@ -2,7 +2,7 @@ app.controller('homeController', function($scope) {
   console.log('home route hit');
 
 
-  $(document).ready(function(){
+  angular.element(document).ready(function () {
     $('.scrollspy').scrollSpy();
   });
 
@@ -47,14 +47,15 @@ app.controller('loansController', function($scope) {
 app.controller('marketTrendsController', function($scope) {
   console.log('marketTrends route hit');
 
-  // PARALLAX
   angular.element(document).ready(function () {
+    // TWITTER EMBED
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    // SCROLLSPY
     $('.scrollspy').scrollSpy();
+    // PARALLAX
     $('.parallax').parallax();
   });
 
-  // TWITTER EMBED
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
 })
 
