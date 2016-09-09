@@ -1,1 +1,53 @@
-<h3 class='page-headers'>Property Listings</h3>
+<div class='listings-container-large'>
+  <!-- <section>
+    <div class="row">
+      <div class="col s6">
+        <h3 class='page-headers'>Property Listings</h3>
+        <div class="underline_about" id="listings_underline"></div>
+      </div>
+  </section>
+
+  <div class="row">
+    <div class="col s12 m4 l4 cards-container">
+      <div class="card listing_cards" ng-repeat="listing in listings">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{{listing.imageUrl}}">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">{{listing.name}}<i class="material-icons right">more_vert</i></span>
+          <p class ="text" ng-class="{red: listing.listing === 'SOLD'}">{{listing.listing}}</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4 text">{{listing.name}}<i class="material-icons right">close</i></span>
+          <p class ="text">{{listing.address}}</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <section>
+  <div class="row">
+    <div class="col s6">
+      <h2 class="us_titles">Listings</h2>
+      <div class="underline_about" id="listings_underline"></div>
+    </div>
+</section>
+
+
+<div class="row card_row">
+  <div class="cards-container">
+    <div class="card listing_cards col s12 m3 l3" ng-repeat="listing in listings">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="{{listing.imageUrl}}">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">{{listing.name}}<i class="material-icons right">more_vert</i></span>
+    <p class ="text" ng-class="{red: listing.listing === 'SOLD'}">{{listing.listing}}</p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4 text">{{listing.name}}<i class="material-icons right">close</i></span>
+    <p class ="text">{{listing.address}}</p>
+  </div>
+</div>
+  </div>
+</div>
+</div>

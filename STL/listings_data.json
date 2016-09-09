@@ -1,0 +1,38 @@
+[
+  {
+      "name": "SUPER 8, NM",
+      "listing": "SOLD",
+      "address": "1610 S Cedar St, Raton, NM 87740",
+      "imageUrl": "http://www.hotel.de/media/hotel/pictures/212/21226/Exterior_635620034506685488.jpg"
+  },
+  {
+      "name": "SUPER 8, CO",
+      "listing": "SOLD",
+      "address": "9051 I-76, Henderson, CO 80640",
+      "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/06/2b/6b/d5/welcome-to-super-8-henderson.jpg"
+  },
+  {
+      "name": "JAMBOREE LIQUOR",
+      "listing": "LISTED",
+      "address": " 8290 Razorback Rd, Colorado Springs, CO 80920",
+      "imageUrl": "https://cdn.beeradvocate.com/im/places/22551.jpg"
+  },
+  {
+      "name": "DAYS INN",
+      "listing": "SOLD",
+      "address": "426 N Main St, Moab, UT 84532",
+      "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/03/5b/91/13/days-inn-moab.jpg"
+  },
+  {
+      "name": "FIREBIRD MOTEL",
+      "listing": "SOLD",
+      "address": "1905 E Lincolnway, Cheyenne, WY 82001",
+      "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/04/49/40/4f/firebird-motel.jpg"
+  },
+  {
+      "name": "Bayard stew",
+      "listing": "SOLD",
+      "address": "",
+      "imageUrl": ""
+  }
+]

@@ -59,7 +59,13 @@ app.controller('marketTrendsController', function($scope) {
 
 })
 
-app.controller('listingsController', function($scope) {
+app.controller('listingsController', function($scope, httpFactory) {
   console.log('listings route hit');
+
+  httpFactory.listings().then(function(data){
+    for (var i = 0; i < data.data.length; i++) {
+      $scope.listings=data.data;
+    }
+  })
 
 })
