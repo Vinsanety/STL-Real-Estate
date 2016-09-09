@@ -1,0 +1,40 @@
+.buying-container{
+  background-color: blue;
+  margin-left: 20%;
+}
+
+#apr_position{
+  position: absolute;
+  left: 105%;
+  top: 43%;
+}
+
+#apr_vs_ir_position{
+  position: absolute;
+  left: -55%;
+  top: 43%;
+}
+
+#mortgage_point_position{
+  position: absolute;
+  left: 90%;
+  top: 40%;
+}
+
+#affordability_mortgage_position{
+  position: absolute;
+  left: -67%;
+  top: 43%;
+}
+
+#fees_position{
+  position: absolute;
+  left: 105%;
+  top: 43%;
+}
+
+#home_expense_position{
+  position: absolute;
+  left: -55%;
+  top: 43%;
+}

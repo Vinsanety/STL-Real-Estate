@@ -7,7 +7,9 @@
   border: 0;
   background-color:rgba(0, 0, 0, 0);
 }
-
+#nav-text{
+  color: maroon;
+}
 .table-of-contents a{
   width: auto;
   color: #800000;
@@ -28,6 +30,9 @@
 .small-nav{
   width: 100%;
   text-align: center;
+}
+#small-links{
+  color: maroon;
 }
 
 

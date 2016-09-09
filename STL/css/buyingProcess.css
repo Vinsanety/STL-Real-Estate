@@ -1,1 +1,85 @@
+.contatiner_steps{
+  width: 40%;
+  height: 40%;
+  /*border: solid 1px black;*/
+  position: relative;
+  margin-top: 5%;
 
+}
+.steps_title{
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 93%;
+  top: 35%;
+  letter-spacing: 12px;
+  font-family: BenchNine;
+}
+#research_line{
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 90%;
+  top: 45%;
+}
+#left_line{
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -23%;
+  top: 55%;
+}
+
+#affordability_position{
+  position: absolute;
+  left: -43%;
+  top: 45%;
+}
+#agent_position{
+  position: absolute;
+  left: -30%;
+  top: 48%;
+}
+
+.top_title{
+  position: absolute;
+  top: -15%;
+  letter-spacing: 12px;
+  font-family: BenchNine;
+}
+
+.right_title{
+  position: absolute;
+  left: 103%;
+  top: 42%;
+}
+
+#shop_position{
+  top: -8%
+}
+
+#inspection_position{
+  position: absolute;
+  left: -48%;
+  top: 48%;
+}
+
+#loan_position{
+  position: absolute;
+  left: 103%;
+  top: 42%;
+}
+#appraisal_position{
+  position: absolute;
+  left: -35%;
+  top: 46%;
+}
+
+#paperwork_position{
+  position: absolute;
+  left: 93%;
+  top: 40%;
+}
+
+#closing_position{
+  position: absolute;
+  left: -30%;
+  top: 45%;
+}

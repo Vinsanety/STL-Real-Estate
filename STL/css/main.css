@@ -14,7 +14,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  text-align: center;
+  text-align: left;
   letter-spacing: 8px;
   font-family: BenchNine;
   animation: font_color_change 3.5s infinite ease-in-out;
