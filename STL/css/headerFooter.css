@@ -37,11 +37,11 @@
 
 
 .footer{
-  /*position: fixed;*/
+  background-color: #F2F2F2;
   right: 0;
   bottom: 0;
   left: 0;
-  margin-bottom: 1%;
+  /*margin-bottom: 1%;*/
 }
 #foot_line{
   width: 25vw;

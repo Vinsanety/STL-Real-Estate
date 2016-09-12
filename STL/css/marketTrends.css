@@ -20,3 +20,7 @@
 #trends-large-top-para{
   margin-top: 5%;
 }
+.para{
+  position: fixed;
+  z-index: 1;
+}

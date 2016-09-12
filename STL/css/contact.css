@@ -28,9 +28,9 @@
 }
 #contact_pic1{
   position: absolute;
-  margin: 8%;
-  width: 400px;
-  height: auto;
+  margin: 3%;
+  width: 375px;
+  height: 500px;
 }
 .underline{
   width: 10vw;
@@ -39,11 +39,6 @@
 }
 span{
   color: maroon;
-}
-
-#contact_pic1{
-  width: 350px;
-  height: 450px;
 }
 
 .contact_container{

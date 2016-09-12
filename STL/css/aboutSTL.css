@@ -1,6 +1,7 @@
 .about_large_container{
   margin: 0;
   margin-left: 20%;
+  margin-bottom: 7%;
 }
 .about_small_container{
   margin-top: 0;
@@ -32,10 +33,12 @@
 }
 
 #about_pic1{
-  position: absolute;
-  margin: 8%;
-  width: 400px;
-  height: auto;
+  margin-top: 12%;
+}
+
+.about-text{
+  font-size: 24px;
+  letter-spacing: 4px;
 }
 
 .underline_about{
