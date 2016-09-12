@@ -26,8 +26,24 @@
   </div> -->
 
 
-
   <h3 class="page-headers">Listings</h3>
+  <div class="underline_about" id="listings_underline"></div>
+
+  <div class="row">
+    <div ng-repeat="listing in listings" class="col s12 m3 l4 properties_container">
+      <div class="properties_flex col s12 m3 l4">
+        <a class="waves-effect waves-light btn-large property_text property_button" ng-class="{red: listing.listing === 'SOLD'}">{{listing.name}} || {{listing.listing}}</a>
+      <div class="properties_img_container">
+        <img class="materialboxed properties_img" data-caption="{{listing.name}} {{listing.address}}" src="{{listing.imageUrl}}" alt="No Image">
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- <h3 class="page-headers">Listings</h3>
   <div class="underline_about" id="listings_underline"></div>
 
   <div class="row">
@@ -47,4 +63,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

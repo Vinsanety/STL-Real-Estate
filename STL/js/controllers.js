@@ -62,6 +62,9 @@ app.controller('marketTrendsController', function($scope) {
 app.controller('listingsController', function($scope, httpFactory) {
   console.log('listings route hit');
 
+  angular.element(document).ready(function () {
+    $('.materialboxed').materialbox();
+  })
   httpFactory.listings().then(function(data){
     for (var i = 0; i < data.data.length; i++) {
       $scope.listings=data.data;
