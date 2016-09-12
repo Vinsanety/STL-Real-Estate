@@ -64,6 +64,7 @@ app.controller('listingsController', function($scope, httpFactory) {
 
   angular.element(document).ready(function () {
     $('.materialboxed').materialbox();
+    $('.modal-trigger').leanModal();
   })
   httpFactory.listings().then(function(data){
     for (var i = 0; i < data.data.length; i++) {

@@ -1,38 +1,11 @@
-<div class='listings-container-large'>
-  <!-- <section>
-    <div class="row">
-      <div class="col s6">
-        <h3 class='page-headers'>Property Listings</h3>
-        <div class="underline_about" id="listings_underline"></div>
-      </div>
-  </section>
-
-  <div class="row">
-    <div class="col s12 m4 l4 cards-container">
-      <div class="card listing_cards" ng-repeat="listing in listings">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{listing.imageUrl}}">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">{{listing.name}}<i class="material-icons right">more_vert</i></span>
-          <p class ="text" ng-class="{red: listing.listing === 'SOLD'}">{{listing.listing}}</p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4 text">{{listing.name}}<i class="material-icons right">close</i></span>
-          <p class ="text">{{listing.address}}</p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
+<div class='listings-container-large hide-on-med-and-down'>
 
   <h3 class="page-headers">Listings</h3>
   <div class="underline_about" id="listings_underline"></div>
-
   <div class="row">
     <div ng-repeat="listing in listings" class="col s12 m3 l4 properties_container">
       <div class="properties_flex col s12 m3 l4">
-        <a class="waves-effect waves-light btn-large property_text property_button" ng-class="{red: listing.listing === 'SOLD'}">{{listing.name}} || {{listing.listing}}</a>
+        <a class="waves-effect waves-light btn-large modal-trigger property_text property_button" ng-class="{red: listing.listing === 'SOLD'}" href='#modal1'>{{listing.name}} || {{listing.listing}}</a>
       <div class="properties_img_container">
         <img class="materialboxed properties_img" data-caption="{{listing.name}} {{listing.address}}" src="{{listing.imageUrl}}" alt="No Image">
       </div>
@@ -43,24 +16,36 @@
 </div>
 
 
-  <!-- <h3 class="page-headers">Listings</h3>
-  <div class="underline_about" id="listings_underline"></div>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal" ng-repeat='listing in listings'>
+    <div class="modal-content center-align">
+      <h4>Property Details</h4>
+      <p>{{listing.name}} || {{listing.listing}}</p>
+      <p>{{listing.address}}</p>
+      <img class="properties_img" src="{{listing.imageUrl}}" alt="No Image">
+    </div>
+    <div class="modal-footer">
+      <a ui-sref="listings" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+    </div>
+  </div>
 
+
+
+<!-- START LISTINGS SMALL -->
+<div class='listings-container-small hide-on-large-only'>
+
+  <h3 class="page-headers">Listings</h3>
+  <div class="underline_about" id="listings_underline"></div>
   <div class="row">
-    <div class='col s12 m4 l4'>
-      <div class="card" ng-repeat="listing in listings">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{listing.imageUrl}}">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">{{listing.name}}<i class="material-icons right">more_vert</i></span>
-          <p class ="text" ng-class="{red: listing.listing === 'SOLD'}">{{listing.listing}}</p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4 text">{{listing.name}}<i class="material-icons right">close</i></span>
-          <p class ="text">{{listing.address}}</p>
-        </div>
+    <div ng-repeat="listing in listings" class="col s12 properties_container">
+      <div class="properties_flex col s12 m3 l4">
+        <a class="waves-effect waves-light btn-large modal-trigger property_text property_button_small" ng-class="{red: listing.listing === 'SOLD'}" href='#modal1'>{{listing.name}} || {{listing.listing}}</a>
+      <div class="properties_img_container_small">
+        <img class="materialboxed properties_img" data-caption="{{listing.name}} {{listing.address}}" src="{{listing.imageUrl}}" alt="No Image">
+      </div>
       </div>
     </div>
   </div>
-</div> -->
+
+</div>
+<!-- END LISTINGS SMALL -->
