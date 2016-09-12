@@ -4,11 +4,26 @@
 
 *{
   font-family: BenchNine;
+  /*background-color: #F2F2F2;*/
+  height: auto;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.footer {
+  /*padding: 20px;*/
 }
 
 body{
   background-color: #F2F2F2;
-  min-height: 100%;
+  height: auto;
 }
 .page-headers{
   margin-left: auto;

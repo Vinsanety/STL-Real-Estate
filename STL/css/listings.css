@@ -1,32 +1,20 @@
 .listings-container-large{
   width: 80%;
-  margin-left: 20%;
+  margin-left: 25%;
+  margin-right: auto;
 }
 #listings_underline{
   width: 125px;
+  margin-bottom: 5%;
 }
-
-.cards-container{
-  display: inline-block;
-}
-
-.listing_cards{
-  margin-right: 40px;
-  margin-left: 0px;
-  right: 0px;
-  left: 0px;
-  padding: 0 0;
-}
-
 .red{
   color: red !important;
   background-color: transparent !important;
 }
-
 .card{
   background-color: white;
+  display: inline-block;
 }
-
 i{
   color: maroon;
 }

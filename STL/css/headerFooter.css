@@ -37,32 +37,44 @@
 
 
 .footer{
-  position: fixed;
+  /*position: fixed;*/
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  color: maroon;
+  margin-bottom: 1%;
+}
+#foot_line{
+  width: 25vw;
+  height: 1px;
+  background-color: #800000;
 }
 #footer-about{
-  padding-right: 1%;
-  color: maroon;
+  padding-right: 1.5%;
+  color: #3f3f3f;
 }
 #footer-contact{
-  padding-right: 1%;
-  color: maroon;
+  padding-left: 1.5%;
+  color: #3f3f3f;
 }
 #footer-about:hover{
-  color: #039BE5;
+  color: maroon;
 }
 #footer-contact:hover{
-  color: #039BE5;
+  color: maroon;
 }
 .divider{
-  color: #039BE5;
+  color: maroon;
   margin-left: 1%;
   margin-right: 1%;
 }
-#footer-copyright{
+#footer-STL{
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
   color: #3f3f3f;
+  letter-spacing: 12px;
+}
+#footer-fixer{
+  color: rgba(0, 0, 0, 0);
+  font-size: 12px;
 }
